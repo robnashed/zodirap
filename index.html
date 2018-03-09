@@ -1,0 +1,59 @@
+<DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ZodiRap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+    <a href="index.html" class="logo">ZodiRap</a>
+    
+    <div class="infoContainer">
+        <div class="info">
+            <div class="rapperName" id="rapper"></div>
+            <div class="sign" id="sign"></div>
+            <div class="rapperInfo" id="rapInfo"></div>
+        </div>
+    </div>
+    <div class="calculator">
+        <div class="header">
+            Please enter the month and day you were born on.
+        </div>
+        <div class="rapperImg" id="rapperImg">
+                
+        </div>
+        <div class="calcInput animated" id="input"> 
+            <input type="text" id="month" maxlength="2" placeholder="00">
+            <span class="slash">  / </span>
+            <input type="text" id="day" maxlength="2" placeholder="00">
+        </div>
+        <div class="buttonContainer">
+            <button class="submitButton" onclick="calcTest()">Submit</button>
+           
+        </div>
+    </div>
+    
+    <div class="container cards">
+        <div onclick="aries()"class="rapper chance" id="chance"><img class="card chance" src="img/chance.jpg"/></div>
+        <div onclick="taurus()"class="rapper pushat"><img class="card pushat" src="img/pushat.jpg"/></div>
+        <div onclick="gemini()"class="rapper kendrick"><img class="card kendrick" src="img/kendrick.jpg"/></div>
+        <div onclick="cancer()"class="rapper 50cent"><img class="card 50cent" src="img/50cent.jpg"/></div>
+        <div onclick="leo()"class="rapper liluzivert"><img class="card liluzivert" src="img/liluzivert.jpg"/></div>
+        <div onclick="virgo()"class="rapper nas"><img class="card nas" src="img/nas.jpg"/></div>
+        <div onclick="libra()"class="rapper lilwayne"><img class="card lilwayne" src="img/lilwayne.jpg"/></div>
+        <div onclick="scorpio()"class="rapper drake"><img class="card drake" src="img/drake.jpg"/></div>
+        <div onclick="sagittarius()"class="rapper jayz"><img class="card jayz" src="img/jayz.jpg"/></div>
+        <div onclick="capricorn()"class="rapper macmiller"><img class="card macmiller" src="img/macmiller.jpg"/></div>
+        <div onclick="aquarius()"class="rapper jcole"><img class="card jcole" src="img/jcole.jpg"/></div>
+        <div onclick="pisces()"class="rapper earl"><img class="card earl" src="img/earl.jpg"/></div>
+       
+    </div>
+    <footer>Made by Rob Nashed</footer>
+</div>
+</body>
+</html>
