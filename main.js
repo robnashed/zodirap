@@ -1,6 +1,6 @@
 //songs
 var music = document.createElement("AUDIO");
-music.muted = true;
+
 
 //sound toggle function
 var isMusicOn = true;
@@ -32,9 +32,10 @@ function aries(){
   document.getElementById("rapInfo").innerHTML = aries.description;
   document.getElementById("rapperImg").innerHTML = '<img src="img/chance.jpg" />';
   music.src = "mp3/noproblem.mp3";
-  music.muted = false;
-  music.play();
   
+  if(isMusicOn){
+    music.play();
+  }
  
 }
 
@@ -49,8 +50,10 @@ function taurus(){
   document.getElementById("rapInfo").innerHTML = taurus.description;
   document.getElementById("rapperImg").innerHTML = '<img src="img/pushat.jpg" />';
   music.src = "mp3/untouchable.mp3";
-  music.muted = false;
-  music.play();
+ 
+  if(isMusicOn){
+    music.play();
+  }
 }
 
 function gemini(){
@@ -64,8 +67,10 @@ function gemini(){
   document.getElementById("rapInfo").innerHTML = gemini.description;
   document.getElementById("rapperImg").innerHTML = '<img src="img/kendrick.jpg" />';
   music.src = "mp3/humble.mp3";
-  music.muted = false;
-  music.play();
+ 
+  if(isMusicOn){
+    music.play();
+  }
 }
 
 function cancer(){
@@ -79,8 +84,10 @@ function cancer(){
   document.getElementById("rapInfo").innerHTML = cancer.description;
   document.getElementById("rapperImg").innerHTML = '<img src="img/50cent.jpg" />';
   music.src = "mp3/indaclub.mp3";
-  music.muted = false;
-  music.play();
+ 
+  if(isMusicOn){
+    music.play();
+  }
 }
 
 function leo(){
@@ -94,8 +101,10 @@ function leo(){
   document.getElementById("rapInfo").innerHTML = leo.description;
   document.getElementById("rapperImg").innerHTML = '<img src="img/liluzivert.jpg" />';
   music.src = "mp3/xotourlife.mp3";
-  music.muted = false;
-  music.play();
+  
+  if(isMusicOn){
+    music.play();
+  }
 }
 
 function virgo(){
@@ -109,8 +118,10 @@ function virgo(){
   document.getElementById("rapInfo").innerHTML = virgo.description;
   document.getElementById("rapperImg").innerHTML = '<img src="img/nas.jpg" />';
   music.src = "mp3/nystateofmind.mp3";
-  music.muted = false;
-  music.play();
+ 
+  if(isMusicOn){
+    music.play();
+  }
 }
 
 function libra(){
@@ -124,8 +135,10 @@ function libra(){
   document.getElementById("rapInfo").innerHTML = libra.description;
   document.getElementById("rapperImg").innerHTML = '<img src="img/lilwayne.jpg" />';
   music.src = "mp3/amilli.mp3";
-  music.muted = false;
-  music.play();
+
+  if(isMusicOn){
+    music.play();
+  }
 }
 
 function scorpio(){
@@ -139,8 +152,10 @@ function scorpio(){
   document.getElementById("rapInfo").innerHTML = scorpio.description;
   document.getElementById("rapperImg").innerHTML = '<img src="img/drake.jpg" />';
   music.src = "mp3/godsplan.mp3";
-  music.muted = false;
-  music.play();
+ 
+  if(isMusicOn){
+    music.play();
+  }
 }
 
 function sagittarius(){
@@ -154,8 +169,10 @@ function sagittarius(){
   document.getElementById("rapInfo").innerHTML = sagittarius.description;
   document.getElementById("rapperImg").innerHTML = '<img src="img/jayz.jpg" />';
   music.src = "mp3/izzo.mp3";
-  music.muted = false;
-  music.play();
+ 
+  if(isMusicOn){
+    music.play();
+  }
 }
 
 function capricorn(){
@@ -169,8 +186,10 @@ function capricorn(){
   document.getElementById("rapInfo").innerHTML = capricorn.description;
   document.getElementById("rapperImg").innerHTML = '<img src="img/macmiller.jpg" />';
   music.src = "mp3/donaldtrump.mp3";
-  music.muted = false;
-  music.play();
+
+  if(isMusicOn){
+    music.play();
+  }
 }
 
 function aquarius(){
@@ -184,8 +203,10 @@ function aquarius(){
   document.getElementById("rapInfo").innerHTML = aquarius.description;
   document.getElementById("rapperImg").innerHTML = '<img src="img/jcole.jpg" />';
   music.src = "mp3/crookedsmile.mp3";
-  music.muted = false;
-  music.play();
+
+  if(isMusicOn){
+    music.play();
+  }
 }
 
 function pisces(){
@@ -199,8 +220,10 @@ function pisces(){
   document.getElementById("rapInfo").innerHTML = pisces.description;
   document.getElementById("rapperImg").innerHTML = '<img src="img/earl.jpg" />';
   music.src = "mp3/chum.mp3";
-  music.muted = false;
-  music.play();
+
+  if(isMusicOn){
+    music.play();
+  }
 }
 
 
@@ -281,8 +304,10 @@ function calcTest(){
         rapperImg.innerHTML = '<img src="img/earl.jpg" />';
         document.body.style.background = "linear-gradient(90deg, #11998e,  #38ef7d)";
         music.src = "mp3/chum.mp3";
-        music.muted = false;
-        music.play();
+      
+        if(isMusicOn){
+          music.play();
+        }
         
       } 
       else if ((month == 1 && day >= 21) || (month == 2 && day <= 19)) {
@@ -293,8 +318,10 @@ function calcTest(){
         rapperImg.innerHTML = '<img src="img/jcole.jpg" />';
         document.body.style.background = "linear-gradient(90deg, #0575E6,  #021B79)";
         music.src = "mp3/crookedsmile.mp3";
-        music.muted = false;
-        music.play();
+     
+        if(isMusicOn){
+          music.play();
+        }
         
       } 
       else if ((month == 12 && day >= 22) || (month == 1 && day <= 20)) {
@@ -305,8 +332,10 @@ function calcTest(){
         rapperImg.innerHTML = '<img src="img/macmiller.jpg" />';
         document.body.style.background = "linear-gradient(90deg, #134E5E,  #71B280)";
         music.src = "mp3/donaldtrump.mp3";
-        music.muted = false;
-        music.play();
+       
+        if(isMusicOn){
+          music.play();
+        }
       } 
       else if ((month == 11 && day >= 22) || (month == 12 && day <= 21)) {
         console.log('Sagittarius');
@@ -316,8 +345,10 @@ function calcTest(){
         rapperImg.innerHTML = '<img src="img/jayz.jpg" />';
         document.body.style.background = "linear-gradient(90deg, #3494E6,  #EC6EAD)";
         music.src = "mp3/izzo.mp3";
-        music.muted = false;
-        music.play();
+      
+        if(isMusicOn){
+          music.play();
+        }
       } 
       else if ((month == 10 && day >= 22) || (month == 11 && day <= 21)) {
         console.log('Scorpio');
@@ -327,8 +358,10 @@ function calcTest(){
         rapperImg.innerHTML = '<img src="img/drake.jpg" />';
         document.body.style.background = "linear-gradient(90deg, #000000,  #EB5757)";
         music.src = "mp3/godsplan.mp3";
-        music.muted = false;
-        music.play();
+       
+        if(isMusicOn){
+          music.play();
+        }
       } 
       else if ((month == 9 && day >= 22) || (month == 10 && day <= 21)) {
         console.log('Libra');
@@ -338,8 +371,10 @@ function calcTest(){
         rapperImg.innerHTML = '<img src="img/lilwayne.jpg" />';
         document.body.style.background = "linear-gradient(90deg, #667db6,  #0082c8)";
         music.src = "mp3/amilli.mp3";
-        music.muted = false;
-        music.play();
+       
+        if(isMusicOn){
+          music.play();
+        }
       } 
       else if ((month == 8 && day >= 23) || (month == 9 && day <= 21)) {
         console.log('Virgo');
@@ -349,8 +384,10 @@ function calcTest(){
         rapperImg.innerHTML = '<img src="img/nas.jpg" />';
         document.body.style.background = "linear-gradient(90deg, #0f0c29,  #302b63)";
         music.src = "mp3/nystateofmind.mp3";
-        music.muted = false;
-        music.play();
+        
+        if(isMusicOn){
+          music.play();
+        }
       } 
       else if ((month == 7 && day >= 22) || (month == 8 && day <= 22)) {
         console.log('Leo');
@@ -360,8 +397,10 @@ function calcTest(){
         rapperImg.innerHTML = '<img src="img/liluzivert.jpg" />';
         document.body.style.background = "linear-gradient(90deg, #ee0979,  #ff6a00)";
         music.src = "mp3/xotourlife.mp3";
-        music.muted = false;
-        music.play();
+     
+        if(isMusicOn){
+          music.play();
+        }
       } 
       else if ((month == 6 && day >= 21) || (month == 7 && day <= 21)) {
         console.log('Cancer');
@@ -371,8 +410,10 @@ function calcTest(){
         rapperImg.innerHTML = '<img src="img/50cent.jpg" />';
         document.body.style.background = "linear-gradient(90deg, #7F00FF,  #E100FF)";
         music.src = "mp3/indaclub.mp3";
-        music.muted = false;
-        music.play();
+       
+        if(isMusicOn){
+          music.play();
+        }
       } 
       else if ((month == 5 && day >= 21) || (month == 6 && day <= 20)) {
         console.log('Gemini');
@@ -382,8 +423,10 @@ function calcTest(){
         rapperImg.innerHTML = '<img src="img/kendrick.jpg" />';
         document.body.style.background = "linear-gradient(90deg, #CAC531,  #F3F9A7)";
         music.src = "mp3/humble.mp3";
-        music.muted = false;
-        music.play();
+        
+        if(isMusicOn){
+          music.play();
+        }
       } 
       else if ((month == 4 && day >= 21) || (month == 5 && day <= 20)) {
         console.log('Taurus');
@@ -393,8 +436,10 @@ function calcTest(){
         rapperImg.innerHTML = '<img src="img/pushat.jpg" />';
         document.body.style.background = "linear-gradient(90deg, #636363,  #a2ab58)";
         music.src = "mp3/untouchable.mp3";
-        music.muted = false;
-        music.play();
+       
+        if(isMusicOn){
+          music.play();
+        }
       } 
       else if ((month == 3 && day >= 21) || (month == 4 && day <= 20)) {
         console.log('Aries');
@@ -405,8 +450,10 @@ function calcTest(){
         document.body.style.background = "linear-gradient(90deg, #333333,  #dd1818)";
         
         music.src = "mp3/noproblem.mp3";
-        music.muted = false;
-        music.play();
+        
+        if(isMusicOn){
+          music.play();
+        }
         
       }  
         if (day == 0){
