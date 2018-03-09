@@ -12,6 +12,21 @@ body{
     display: flex;
     flex-flow: row wrap;
 }
+
+.soundButton i{
+    color: white;
+    opacity: 1;
+    transition: .5s;
+    padding-right: 10px;
+    font-size: 20px;
+}
+.soundButton:hover{
+    cursor: pointer;
+    opacity: .3;
+    transform: scale(1.1);
+    transition: .5s;
+    
+}
 .logo{
     color: #fff;
     font-family: 'Dosis', sans-serif;

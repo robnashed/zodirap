@@ -1,19 +1,41 @@
+//songs
+var music = document.createElement("AUDIO");
+music.muted = true;
+
+//sound toggle function
+var isMusicOn = true;
+
+function soundToggle(){
+  var soundButton = document.getElementById("soundControl");
+  if(isMusicOn){
+    isMusicOn = false;
+    music.pause();
+    soundButton.innerHTML = '<i class="fas fa-volume-off"></i>';
+    console.log('music is now off');
+  } else if(!isMusicOn){
+    isMusicOn = true;
+    music.play();
+    soundButton.innerHTML = '<i class="fas fa-volume-up"></i>';
+    console.log('music is now on');
+  }
+}
 
 //Zodiac Page Functions
-
-
-
 function aries(){
   var aries = {
     rapper: 'Chance the Rapper',
     description: 'Aries is the first sign of the zodiac. Those who are Aries are independent and courageous. They enjoy leading others and bringing excitement into the lives of others. An Aries is enthusiastic and very goal-oriented.'
   }
   document.body.style.background = "linear-gradient(90deg, #333333,  #dd1818)";
-
   document.getElementById("rapper").innerHTML = aries.rapper;
   document.getElementById("sign").innerHTML = 'Aries';
   document.getElementById("rapInfo").innerHTML = aries.description;
   document.getElementById("rapperImg").innerHTML = '<img src="img/chance.jpg" />';
+  music.src = "mp3/noproblem.mp3";
+  music.muted = false;
+  music.play();
+  
+ 
 }
 
 function taurus(){
@@ -26,6 +48,9 @@ function taurus(){
   document.getElementById("sign").innerHTML = 'Taurus';
   document.getElementById("rapInfo").innerHTML = taurus.description;
   document.getElementById("rapperImg").innerHTML = '<img src="img/pushat.jpg" />';
+  music.src = "mp3/untouchable.mp3";
+  music.muted = false;
+  music.play();
 }
 
 function gemini(){
@@ -38,6 +63,9 @@ function gemini(){
   document.getElementById("sign").innerHTML = 'Gemini';
   document.getElementById("rapInfo").innerHTML = gemini.description;
   document.getElementById("rapperImg").innerHTML = '<img src="img/kendrick.jpg" />';
+  music.src = "mp3/humble.mp3";
+  music.muted = false;
+  music.play();
 }
 
 function cancer(){
@@ -50,6 +78,9 @@ function cancer(){
   document.getElementById("sign").innerHTML = 'Cancer';
   document.getElementById("rapInfo").innerHTML = cancer.description;
   document.getElementById("rapperImg").innerHTML = '<img src="img/50cent.jpg" />';
+  music.src = "mp3/indaclub.mp3";
+  music.muted = false;
+  music.play();
 }
 
 function leo(){
@@ -62,6 +93,9 @@ function leo(){
   document.getElementById("sign").innerHTML = 'Leo';
   document.getElementById("rapInfo").innerHTML = leo.description;
   document.getElementById("rapperImg").innerHTML = '<img src="img/liluzivert.jpg" />';
+  music.src = "mp3/xotourlife.mp3";
+  music.muted = false;
+  music.play();
 }
 
 function virgo(){
@@ -74,6 +108,9 @@ function virgo(){
   document.getElementById("sign").innerHTML = 'Virgo';
   document.getElementById("rapInfo").innerHTML = virgo.description;
   document.getElementById("rapperImg").innerHTML = '<img src="img/nas.jpg" />';
+  music.src = "mp3/nystateofmind.mp3";
+  music.muted = false;
+  music.play();
 }
 
 function libra(){
@@ -86,6 +123,9 @@ function libra(){
   document.getElementById("sign").innerHTML = 'Libra';
   document.getElementById("rapInfo").innerHTML = libra.description;
   document.getElementById("rapperImg").innerHTML = '<img src="img/lilwayne.jpg" />';
+  music.src = "mp3/amilli.mp3";
+  music.muted = false;
+  music.play();
 }
 
 function scorpio(){
@@ -98,6 +138,9 @@ function scorpio(){
   document.getElementById("sign").innerHTML = 'Scorpio';
   document.getElementById("rapInfo").innerHTML = scorpio.description;
   document.getElementById("rapperImg").innerHTML = '<img src="img/drake.jpg" />';
+  music.src = "mp3/godsplan.mp3";
+  music.muted = false;
+  music.play();
 }
 
 function sagittarius(){
@@ -110,6 +153,9 @@ function sagittarius(){
   document.getElementById("sign").innerHTML = 'Sagittarius';
   document.getElementById("rapInfo").innerHTML = sagittarius.description;
   document.getElementById("rapperImg").innerHTML = '<img src="img/jayz.jpg" />';
+  music.src = "mp3/izzo.mp3";
+  music.muted = false;
+  music.play();
 }
 
 function capricorn(){
@@ -122,6 +168,9 @@ function capricorn(){
   document.getElementById("sign").innerHTML = 'Capricorn';
   document.getElementById("rapInfo").innerHTML = capricorn.description;
   document.getElementById("rapperImg").innerHTML = '<img src="img/macmiller.jpg" />';
+  music.src = "mp3/donaldtrump.mp3";
+  music.muted = false;
+  music.play();
 }
 
 function aquarius(){
@@ -134,6 +183,9 @@ function aquarius(){
   document.getElementById("sign").innerHTML = 'Aquarius';
   document.getElementById("rapInfo").innerHTML = aquarius.description;
   document.getElementById("rapperImg").innerHTML = '<img src="img/jcole.jpg" />';
+  music.src = "mp3/crookedsmile.mp3";
+  music.muted = false;
+  music.play();
 }
 
 function pisces(){
@@ -146,6 +198,9 @@ function pisces(){
   document.getElementById("sign").innerHTML = 'Pisces';
   document.getElementById("rapInfo").innerHTML = pisces.description;
   document.getElementById("rapperImg").innerHTML = '<img src="img/earl.jpg" />';
+  music.src = "mp3/chum.mp3";
+  music.muted = false;
+  music.play();
 }
 
 
@@ -162,6 +217,7 @@ function calcTest(){
   
   
   //zodiac symbol vars in correct order
+
   var aries = {
     rapper: 'Chance the Rapper',
     description: 'Aries is the first sign of the zodiac. Those who are Aries are independent and courageous. They enjoy leading others and bringing excitement into the lives of others. An Aries is enthusiastic and very goal-oriented.'
@@ -224,7 +280,9 @@ function calcTest(){
         rapperInfo.innerHTML = pisces.description;
         rapperImg.innerHTML = '<img src="img/earl.jpg" />';
         document.body.style.background = "linear-gradient(90deg, #11998e,  #38ef7d)";
-
+        music.src = "mp3/chum.mp3";
+        music.muted = false;
+        music.play();
         
       } 
       else if ((month == 1 && day >= 21) || (month == 2 && day <= 19)) {
@@ -234,7 +292,9 @@ function calcTest(){
         rapperInfo.innerHTML = aquarius.description;
         rapperImg.innerHTML = '<img src="img/jcole.jpg" />';
         document.body.style.background = "linear-gradient(90deg, #0575E6,  #021B79)";
-
+        music.src = "mp3/crookedsmile.mp3";
+        music.muted = false;
+        music.play();
         
       } 
       else if ((month == 12 && day >= 22) || (month == 1 && day <= 20)) {
@@ -244,7 +304,9 @@ function calcTest(){
         rapperInfo.innerHTML = capricorn.description;
         rapperImg.innerHTML = '<img src="img/macmiller.jpg" />';
         document.body.style.background = "linear-gradient(90deg, #134E5E,  #71B280)";
-
+        music.src = "mp3/donaldtrump.mp3";
+        music.muted = false;
+        music.play();
       } 
       else if ((month == 11 && day >= 22) || (month == 12 && day <= 21)) {
         console.log('Sagittarius');
@@ -253,7 +315,9 @@ function calcTest(){
         rapperInfo.innerHTML = sagittarius.description;
         rapperImg.innerHTML = '<img src="img/jayz.jpg" />';
         document.body.style.background = "linear-gradient(90deg, #3494E6,  #EC6EAD)";
-
+        music.src = "mp3/izzo.mp3";
+        music.muted = false;
+        music.play();
       } 
       else if ((month == 10 && day >= 22) || (month == 11 && day <= 21)) {
         console.log('Scorpio');
@@ -262,7 +326,9 @@ function calcTest(){
         rapperInfo.innerHTML = scorpio.description;
         rapperImg.innerHTML = '<img src="img/drake.jpg" />';
         document.body.style.background = "linear-gradient(90deg, #000000,  #EB5757)";
-
+        music.src = "mp3/godsplan.mp3";
+        music.muted = false;
+        music.play();
       } 
       else if ((month == 9 && day >= 22) || (month == 10 && day <= 21)) {
         console.log('Libra');
@@ -271,7 +337,9 @@ function calcTest(){
         rapperInfo.innerHTML = libra.description;
         rapperImg.innerHTML = '<img src="img/lilwayne.jpg" />';
         document.body.style.background = "linear-gradient(90deg, #667db6,  #0082c8)";
-
+        music.src = "mp3/amilli.mp3";
+        music.muted = false;
+        music.play();
       } 
       else if ((month == 8 && day >= 23) || (month == 9 && day <= 21)) {
         console.log('Virgo');
@@ -280,7 +348,9 @@ function calcTest(){
         rapperInfo.innerHTML = virgo.description;
         rapperImg.innerHTML = '<img src="img/nas.jpg" />';
         document.body.style.background = "linear-gradient(90deg, #0f0c29,  #302b63)";
-
+        music.src = "mp3/nystateofmind.mp3";
+        music.muted = false;
+        music.play();
       } 
       else if ((month == 7 && day >= 22) || (month == 8 && day <= 22)) {
         console.log('Leo');
@@ -289,7 +359,9 @@ function calcTest(){
         rapperInfo.innerHTML = leo.description;
         rapperImg.innerHTML = '<img src="img/liluzivert.jpg" />';
         document.body.style.background = "linear-gradient(90deg, #ee0979,  #ff6a00)";
-
+        music.src = "mp3/xotourlife.mp3";
+        music.muted = false;
+        music.play();
       } 
       else if ((month == 6 && day >= 21) || (month == 7 && day <= 21)) {
         console.log('Cancer');
@@ -298,7 +370,9 @@ function calcTest(){
         rapperInfo.innerHTML = cancer.description;
         rapperImg.innerHTML = '<img src="img/50cent.jpg" />';
         document.body.style.background = "linear-gradient(90deg, #7F00FF,  #E100FF)";
-
+        music.src = "mp3/indaclub.mp3";
+        music.muted = false;
+        music.play();
       } 
       else if ((month == 5 && day >= 21) || (month == 6 && day <= 20)) {
         console.log('Gemini');
@@ -307,7 +381,9 @@ function calcTest(){
         rapperInfo.innerHTML = gemini.description;
         rapperImg.innerHTML = '<img src="img/kendrick.jpg" />';
         document.body.style.background = "linear-gradient(90deg, #CAC531,  #F3F9A7)";
-
+        music.src = "mp3/humble.mp3";
+        music.muted = false;
+        music.play();
       } 
       else if ((month == 4 && day >= 21) || (month == 5 && day <= 20)) {
         console.log('Taurus');
@@ -316,6 +392,9 @@ function calcTest(){
         rapperInfo.innerHTML = taurus.description;
         rapperImg.innerHTML = '<img src="img/pushat.jpg" />';
         document.body.style.background = "linear-gradient(90deg, #636363,  #a2ab58)";
+        music.src = "mp3/untouchable.mp3";
+        music.muted = false;
+        music.play();
       } 
       else if ((month == 3 && day >= 21) || (month == 4 && day <= 20)) {
         console.log('Aries');
@@ -325,6 +404,9 @@ function calcTest(){
         rapperImg.innerHTML = '<img src="img/chance.jpg" />';
         document.body.style.background = "linear-gradient(90deg, #333333,  #dd1818)";
         
+        music.src = "mp3/noproblem.mp3";
+        music.muted = false;
+        music.play();
         
       }  
         if (day == 0){
@@ -358,14 +440,3 @@ function calcTest(){
 }
 
 
-// var rapperList = document.getElementsByClassName('rapper');
-// console.log(rapperList);
-// console.log(rapperList.length);
-// for (var i = 0; i < 12; i++){
-//   console.log(i);
-//   rapperList[i].addEventListener("click", function(){console.log(this.id)}, false);
-// }
-
-// function clicker(id){
-//   console.log('hello' + id);
-// }
