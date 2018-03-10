@@ -1,10 +1,8 @@
-//songs
+//create background music
 var music = document.createElement("AUDIO");
-
 
 //sound toggle function
 var isMusicOn = true;
-
 function soundToggle(){
   var soundButton = document.getElementById("soundControl");
   if(isMusicOn){
@@ -20,7 +18,7 @@ function soundToggle(){
   }
 }
 
-//Zodiac Page Functions
+//zodiac click functions
 function aries(){
   var aries = {
     rapper: 'Chance the Rapper',
@@ -455,35 +453,30 @@ function calcTest(){
           music.play();
         }
         
-      }  
-        if (day == 0){
-        console.log('no day');
-        rapperName.innerHTML = ' ';
-        rapperSign.innerHTML = ' ';
-        rapperInfo.innerHTML = ' ';
-        rapperImg.innerHTML = ' ';
-        input.classList.toggle("shake");
-        
-        
-        
       } 
-      if (day > 31){
-        console.log('Day over 31');
+      //handle false inputs
+      
+        if (day == 0 || day > 31 || month > 12 || day < 0){
         rapperName.innerHTML = ' ';
         rapperSign.innerHTML = ' ';
         rapperInfo.innerHTML = ' ';
         rapperImg.innerHTML = ' ';
-      }
-      if (month > 12){
-        console.log('Day over 31');
-        rapperName.innerHTML = ' ';
-        rapperSign.innerHTML = ' ';
-        rapperInfo.innerHTML = ' ';
-        rapperImg.innerHTML = ' ';
-      }
+        //shake animation
+        var hasShake = false;
+        if(!hasShake){
+          console.log('shake!');
+          input.classList.add("shake");
+          
+        }
+        if(hasShake){
+          console.log('take shake');
+          input.classList.toggle("shake");
+          
+          
+          
+        }
+      } 
 
-      document.getElementById("month").value = '';
-      document.getElementById("day").value = '';
 }
 
 
