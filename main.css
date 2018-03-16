@@ -21,7 +21,7 @@ body{
     font-size: 20px;
     position: fixed;
 }
-.soundButton:hover{
+.soundButton i:hover{
     cursor: pointer;
     opacity: .3;
     transform: scale(1.1);
