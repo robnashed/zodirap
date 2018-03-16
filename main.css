@@ -28,6 +28,10 @@ body{
     transition: .5s;
     
 }
+.header{
+    width:100%;
+    justify-content: center;
+}
 .logo{
     color: #fff;
     font-family: 'Dosis', sans-serif;
@@ -35,7 +39,7 @@ body{
     font-weight: bold;
     text-align: center;
     margin-top:20px;
-    width:100%;
+    
 }
 .infoContainer{
     width:30%;

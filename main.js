@@ -18,6 +18,7 @@ function soundToggle(){
   }
 }
 
+//rapper information
 var rappers = {
   aries:{
     sign: 'Aries',
@@ -118,18 +119,21 @@ var rappers = {
   }
 }
 
+//changeZodiac function: changes the content on the page to apply to the correct zodiac sign.
 function changeZodiac(rapper){
   document.body.style.background = rapper.background;
   document.getElementById("rapper").innerHTML = rapper.rapper;
   document.getElementById("sign").innerHTML = rapper.sign;
   document.getElementById("rapInfo").innerHTML = rapper.description;
   document.getElementById("rapperImg").innerHTML = rapper.img;
+//change source of music, then play music if sound is enabled
   music.src = rapper.song;
-  
   if(isMusicOn){
     music.play();
   }
 }
+
+//adding click listeners to the buttons and then calling the corresponding funtion
 document.getElementById('chance').onclick = function(){
   changeZodiac(rappers.aries);
 }
@@ -169,13 +173,8 @@ document.getElementById('earl').onclick = function(){
 
 
 
-
-
-
-
-//this function runs when submit is clicked
+//this function calculates the user's zodiac sign then runs changeZodiac()
 function calcTest(){
-  //info variables
 
     //month and day variables
     var month = document.getElementById("month").value;
@@ -226,20 +225,8 @@ function calcTest(){
         rapperSign.innerHTML = ' ';
         rapperInfo.innerHTML = ' ';
         rapperImg.innerHTML = ' ';
-        //shake animation
-        var hasShake = false;
-        if(!hasShake){
-          console.log('shake!');
-          input.classList.add("shake");
-          
-        }
-        if(hasShake){
-          console.log('take shake');
-          input.classList.toggle("shake");
-          
-          
-          
-        }
+
+        
       } 
 
 }
