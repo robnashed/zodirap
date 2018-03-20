@@ -21,13 +21,14 @@ body{
     font-size: 20px;
     position: fixed;
 }
+
 .soundButton i:hover{
     cursor: pointer;
     opacity: .3;
     transform: scale(1.1);
     transition: .5s;
-    
 }
+
 .header{
     width:100%;
     justify-content: center;

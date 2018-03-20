@@ -1,4 +1,3 @@
-//create background music
 var music = document.createElement("AUDIO");
 
 //sound toggle function
@@ -117,7 +116,7 @@ var rappers = {
     img: '<img src="img/earl.jpg" />',
     song:'mp3/chum.mp3'
   }
-}
+};
 
 //changeZodiac function: changes the content on the page to apply to the correct zodiac sign.
 function changeZodiac(rapper){
@@ -136,40 +135,40 @@ function changeZodiac(rapper){
 //adding click listeners to the buttons and then calling the corresponding funtion
 document.getElementById('chance').onclick = function(){
   changeZodiac(rappers.aries);
-}
+};
 document.getElementById('pushat').onclick = function(){
   changeZodiac(rappers.taurus);
-}
+};
 document.getElementById('kendrick').onclick = function(){
   changeZodiac(rappers.gemini);
-}
+};
 document.getElementById('50cent').onclick = function(){
   changeZodiac(rappers.cancer);
-}
+};
 document.getElementById('liluzivert').onclick = function(){
   changeZodiac(rappers.leo);
-}
+};
 document.getElementById('nas').onclick = function(){
   changeZodiac(rappers.virgo);
-}
+};
 document.getElementById('lilwayne').onclick = function(){
   changeZodiac(rappers.libra);
-}
+};
 document.getElementById('drake').onclick = function(){
   changeZodiac(rappers.scorpio);
-}
+};
 document.getElementById('jayz').onclick = function(){
   changeZodiac(rappers.sagittarius);
-}
+};
 document.getElementById('macmiller').onclick = function(){
   changeZodiac(rappers.capricorn);
-}
+};
 document.getElementById('jcole').onclick = function(){
   changeZodiac(rappers.aquarius);
-}
+};
 document.getElementById('earl').onclick = function(){
   changeZodiac(rappers.pisces);
-}
+};
 
 
 
@@ -191,15 +190,15 @@ function calcTest(){
         changeZodiac(rappers.capricorn);
       } 
       else if ((month == 11 && day >= 22) || (month == 12 && day <= 21)) {
-        cchangeZodiac(rappers.sagittarius);
+        changeZodiac(rappers.sagittarius);
       } 
       else if ((month == 10 && day >= 22) || (month == 11 && day <= 21)) {
         changeZodiac(rappers.scorpio);
       } 
-      else if ((month == 9 && day >= 22) || (month == 10 && day <= 21)) {
-        changeZodiac(rappers.libraaquarius);
+      else if ((month == 9 && day >= 23) || (month == 10 && day <= 21)) {
+        changeZodiac(rappers.libra);
       } 
-      else if ((month == 8 && day >= 23) || (month == 9 && day <= 21)) {
+      else if ((month == 8 && day >= 23) || (month == 9 && day <= 22)) {
         changeZodiac(rappers.virgo);
       } 
       else if ((month == 7 && day >= 22) || (month == 8 && day <= 22)) {
@@ -220,15 +219,13 @@ function calcTest(){
       } 
       //handle false inputs
       
-        if (day == 0 || day > 31 || month > 12 || day < 0){
-        rapperName.innerHTML = ' ';
-        rapperSign.innerHTML = ' ';
-        rapperInfo.innerHTML = ' ';
-        rapperImg.innerHTML = ' ';
+        if (day === 0 || day > 31 || month > 12 || day <= 0 || month <= 0){
+          document.getElementById("rapper").innerHTML = ' ';
+          document.getElementById("sign").innerHTML = ' ';
+          document.getElementById("rapperImg").innerHTML = ' ';
+          document.getElementById("rapInfo").innerHTML = ' ';
 
         
       } 
 
 }
-
-
