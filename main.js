@@ -22,7 +22,7 @@ var rappers = {
   aries:{
     sign: 'Aries',
     rapper: 'Chance the Rapper',
-    description: 'Aries is the first sign of the zodiac. Those who are Aries are independent and courageous. They enjoy leading others and bringing excitement into the lives of others. An Aries is enthusiastic and very goal-oriented.',
+    description: 'A natural born leader, you would rather issue out orders then recieve them. You can sometimes be impatient, but you always fight hard for your goals. You have a youthful energy, and you can quickly perform any task.',
     background: 'linear-gradient(90deg, #333333,  #dd1818)',
     img: '<img src="img/chance.jpg" />',
     song:'mp3/noproblem.mp3'
@@ -30,7 +30,7 @@ var rappers = {
   taurus:{
     sign: 'Tarus',
     rapper: 'Pusha T',
-    description: 'The second sign of the zodiac, those who are a Taurus are solid and fight for what they want. A Taurus is very easy going but can also be stubborn. A Taurus can be procrastinators but also have a good-work ethic.',
+    description: 'You are down to earth and practical. Making money comes easy to you, and you are committed, which can sometimes be seen as stubbornness. Overall, you are hardworking, patient and reliable.',
     background: 'linear-gradient(90deg, #636363,  #a2ab58)',
     img: '<img src="img/pushat.jpg" />',
     song:'mp3/untouchable.mp3'
@@ -38,7 +38,7 @@ var rappers = {
   gemini:{
     sign: 'Gemini',
     rapper: 'Kendrick Lamar',
-    description: 'Gemini is the third sign of the zodiac. Geminis have many sides and are known for their energy. They are very talkative and are considered social butterflies. A Gemini will always take their lives in the direction they want to go.',
+    description: 'You are open minded, and a talented artist or writer because of it. You tend to switch from a sociable, friendly personality to a serious one pretty quickly. You are fascinated by the world. ',
     background: 'linear-gradient(90deg, #CAC531,  #F3F9A7)',
     img: '<img src="img/kendrick.jpg" />',
     song:'mp3/humble.mp3'
@@ -46,7 +46,7 @@ var rappers = {
   cancer:{
     sign: 'Cancer',
     rapper: '50 Cent',
-    description: 'Cancer is the fourth sign of the zodiac. This sign is marked by inconsistency. They enjoy security but also seek adventure. A Cancer is not very predictable and always keep others guessing.',
+    description: 'You work best on your own, and you are skeptical of strangers. However, you do care deeply for those close to you. When a job needs to get done, you accomplish it with ease. ',
     background: 'linear-gradient(90deg, #7F00FF,  #E100FF)',
     img: '<img src="img/50cent.jpg" />',
     song:'mp3/indaclub.mp3'
@@ -54,7 +54,7 @@ var rappers = {
   leo:{
     sign: 'Leo',
     rapper: 'Lil Uzi Vert',
-    description: 'Leo is the fifth sign in the zodiac. Leos have high self esteem and are very devoted. They are also very kind and generous. A Leo is known for being hot tempered yet forgiving.',
+    description: 'You love to laugh, and tend to view life in a positive light. Creative and passionate, you can quickly solve the most complex problems, and because of this you are confident.',
     background: 'linear-gradient(90deg, #ee0979,  #ff6a00)',
     img: '<img src="img/liluzivert.jpg" />',
     song:'mp3/xotourlife.mp3'
@@ -62,7 +62,7 @@ var rappers = {
   virgo:{
     sign: 'Virgo',
     rapper: 'Nas',
-    description: 'The sixth sign of the zodiac, Virgo is very mind oriented. They are constantly analyzing and thinking. They enjoy bettering themselves and those around them.',
+    description: 'You are well organized, and obsess over details. Living methodically, you create experiences rather then leave them to chance. However, you have a hard time accepting your feelings.',
     background: 'linear-gradient(90deg, #0f0c29,  #302b63)',
     img: '<img src="img/nas.jpg" />',
     song:'mp3/nystateofmind.mp3'
@@ -70,7 +70,7 @@ var rappers = {
   libra:{
     sign: 'Libra',
     rapper: 'Lil Wayne',
-    description: 'The seventh sign of the zodiac, Libras are known for their diplomatic nature. They get along well with everyone and are ambitious. They have very expensive taste and work hard to make money.',
+    description: 'You are known for your diplomatic nature. You are very ambitious, and you get along with nearly everyone. You have an expensive taste, leading you to work hard for money.',
     background: 'linear-gradient(90deg, #667db6,  #0082c8)',
     img: '<img src="img/lilwayne.jpg" />',
     song:'mp3/amilli.mp3'
@@ -78,7 +78,7 @@ var rappers = {
   scorpio:{
     sign: 'Scorpio',
     rapper: 'Drake',
-    description: 'The eight sign of the zodiac, Scorpios are very intense. They like to question everything and work hard at making sense of things. Scorpios treat others with kindness and loyalty.',
+    description: 'When you have a goal, there is no stopping you. You are incredibly passionate for what you do, and this makes you a great leader. You love to feel and express emotions, but you keep a calm demeanor.',
     background: 'linear-gradient(90deg, #000000,  #EB5757)',
     img: '<img src="img/drake.jpg" />',
     song:'mp3/godsplan.mp3'
@@ -86,7 +86,7 @@ var rappers = {
   sagittarius:{
     sign: 'Sagittarius',
     rapper: 'Jay-Z',
-    description: 'The ninth sign of the zodiac, a Sagittarius has a very positive outlook on life. They have vibrant personalities and enjoy meeting new people. They can also be reckless.',
+    description: 'Born with a philosophical nature, you look for meaning in everything. You are incredibly optimistic and have a friendly nature. You put freedom over everything, and are honest in your ways.',
     background: 'linear-gradient(90deg, #3494E6,  #EC6EAD)',
     img: '<img src="img/jayz.jpg" />',
     song:'mp3/izzo.mp3'
@@ -94,7 +94,7 @@ var rappers = {
   capricorn:{
     sign: 'Capricorn',
     rapper: 'Mac Miller',
-    description: 'The 10th sign of the zodiac, those who are Capricorns are marked by their ambitious nature. They have very active minds and always have to be in control of their lives.',
+    description: 'You know how to make the most out of everything in life. You learn from your mistakes, and use your experiences to get to the top. Loyalty is very important to you. ',
     background: 'linear-gradient(90deg, #134E5E,  #71B280)',
     img: '<img src="img/macmiller.jpg" />',
     song:'mp3/donaldtrump.mp3'
@@ -102,7 +102,7 @@ var rappers = {
   aquarius:{
     sign: 'Aquarius',
     rapper: 'J. Cole',
-    description: 'Aquarius is the 11th sign of the zodiac. Aquarians dont always care what others think about them. They take each opportunity they have and work towards formulating new ideas.',
+    description: 'You are a deep thinker, and you tend to be quiet. However, you see the world as full of opportunities, and you are energetic about the things you do. You love to use your mind, and you get bored easily.',
     background: 'linear-gradient(90deg, #0575E6,  #021B79)',
     img: '<img src="img/jcole.jpg" />',
     song:'mp3/crookedsmile.mp3'
@@ -111,7 +111,7 @@ var rappers = {
   pisces:{
     sign: 'Pisces',
     rapper: 'Earl Sweatshirt',
-    description: 'Pisces is the 12th and last sign of the zodiac. Those who are Pisces are extremely sensitive and reserved. They like to escape from reality. A Pisces is a very good listener and friend.',
+    description: 'You often find yourself in the company of many different types of people due to your friendly nature. You are incredibly empathic, and you have a naturally deep understanding of life.',
     background: 'linear-gradient(90deg, #11998e,  #38ef7d)',
     img: '<img src="img/earl.jpg" />',
     song:'mp3/chum.mp3'
@@ -224,8 +224,6 @@ function calcTest(){
           document.getElementById("sign").innerHTML = ' ';
           document.getElementById("rapperImg").innerHTML = ' ';
           document.getElementById("rapInfo").innerHTML = ' ';
-
-        
       } 
 
 }
